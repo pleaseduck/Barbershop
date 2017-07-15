@@ -3,36 +3,36 @@
   <head lang="ru">
     <meta charset="utf-8">
     <title>Прайс-лист</title>
+    <link rel="stylesheet" href="css/price-list.css">
   </head>
   <body>
-    <header class="second-header"> <!--Шапка-->
+    <header class="second-header clearfix"> <!--Шапка-->
       <div class="container">
       <div class="second-logo">
-        <img src="#" alt="barbershop" width="111px" height="24px">
       </div>
         <ul class="main-menu">  <!--Главное меню-->
           <li>
-            <a href="#">Главная</a>
+            <a href="#"><img src="img/common-logo.svg" alt="barbershop" width="111px" height="24px"></a>
           </li>
           <li>
-            <a href="#">Информация</a>
+            <a href="#">ИНФОРМАЦИЯ</a>
           </li>
           <li>
-            <a href="#">Новости</a>
+            <a href="#">НОВОСТИ</a>
           </li>
           <li>
-            <a href="#">Прайс-лист</a>
+            <a href="#">ПРАЙС-ЛИСТ</a>
           </li>
           <li>
-            <a href="#">Магазин</a>
+            <a href="#">МАГАЗИН</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a href="#">КОНТАКТЫ</a>
           </li>
         </ul>
 
       <div class="login-menu">  <!--Кнопка входа и поле, которое появится после входа-->
-      <a href="#" class="btn-enter">Вход</a>
+      <a href="#" class="btn-enter">ВХОД</a>
       </div>
     </div>
     </header>
@@ -42,18 +42,20 @@
           ПРАЙС-ЛИСТ
         </h2>
         <div class="way-to-page">
-          <span>
+          <span class="breadcrumbs">
             <a href="#">ГЛАВНАЯ</a>
           </span>
-          <span>
+          <img src="img/black-shape.svg" alt="blck shape">
+          <span class="breadcrumbs">
             <a href="#" class=selected>ПРАЙС-ЛИСТ</a>
           </span>
         </div>
-        <h1>ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
+        <h1 class="title"><span>ИСТИННО МУЖСКАЯ КЛАССИКА</span></h1>
+      <div class="clearfix">
         <section class="info-about-us">  <!--Левая половина-->
-          <h3>
+          <h2>
             МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:
-          </h3>
+          </h2>
           <ul>
             <li>
               <a href="#">BAXTER OF CALIFORNIA</a>
@@ -68,9 +70,9 @@
               <a href="#">MALIN+GOETZ</a>
             </li>
           </ul>
-          <h3>
+          <h2>
             НЕСКОЛЬКО СЛОВ О НАС:
-          </h3>
+          </h2>
           <p>
           НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ
            СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС&nbsp;&mdash; ЭТО УНИКАЛЬНАЯ
@@ -79,9 +81,9 @@
           </p>
         </section>
         <div class="idk-block">  <!--Правая половина-->
-          <h3>
+          <h2>
             ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ
-          </h3>
+          </h2>
           <table class="price-list">
             <tr>
               <td>СТРИЖКА</td>
@@ -103,6 +105,7 @@
               ДЛЯ ВАС АТМОСФЕРУ, ЧУВСТВОВАТЬ СЕБЯ КОМФОРТНО И&nbsp;СВОБОДНО!
           </p>
         </div>
+      </div>
       </div>
     </main>
     <footer class="main-footer"> <!--Футер-->

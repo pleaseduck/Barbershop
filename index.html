@@ -3,15 +3,14 @@
   <head lang=ru>
     <meta charset="utf-8">
     <title>Barbershop</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="main-header"> <!--Шапка-->
+    <header class="main-header clearfix"> <!--Шапка-->
       <div class="container">
         <ul class="main-menu">  <!--Главное меню-->
-          <li>
-            <a href="#">Главная</a>
-          </li>
+
           <li>
             <a href="#">Информация</a>
           </li>
@@ -38,34 +37,34 @@
 
 <main>
 
-  <div class="logo">  <!--Логотип-->
-    <div class="container">
-    <img src="img/BORODINSKI Logo.svg" alt="Barbershop logo" width="368px" height="204px">
+    <!--Логотип-->
+  <div class="container">
+    <div class="borodinsky-logo">
+      <img src="img/borodinsky-logo.png" alt="Barbershop logo" width="368px" height="204px">
     </div>
   </div>
-
   <div class="advatnages">  <!--Преимущества-->
     <div class="container">
-      <b>БЫСТРО</b>
-      <img src="img/Shape.svg" alt="shape">
-      <div class="advantage advantage-fast">
+     <div class="advantage advantage-fast">
+      <b>БЫСТРО</b><br>
+      <img src="img/Shape.svg" alt="shape" class="shape">
         <p>
            МЫ&nbsp;ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО!ДВА ЧАСА
            ПРОЛЕТЯТ НЕЗАМЕТНО И&nbsp;ВЫ&nbsp;&mdash; СЧАСТЛИВЫЙ
           ОБЛАДАТЕЛЬ СТИЛЬНОЙ <nobr>СТРИЖКИ-МИНУТКИ</nobr>!
           </p>
       </div>
-      <b>КРУТО</b>
-        <img src="img/Shape.svg" alt="shape">
       <div class="advantage advantage-cool">
+      <b>КРУТО</b><br>
+        <img src="img/Shape.svg" alt="shape" class="shape">
         <p>ЗАБУДЬТЕ, КАК ВЫ&nbsp;СТРИГЛИСЬ РАНЬШЕ.
           МЫ СДЕЛАЕМ ИЗ&nbsp;ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
           ВО&nbsp;ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
         </p>
       </div>
-      <b>ДОРОГО</b>
-        <img src="img/Shape.svg" alt="shape">
       <div class="advantage advantage-expensive">
+      <b>ДОРОГО</b><br>
+        <img src="img/Shape.svg" alt="shape" class="shape">
         <p>НАШИ <nobr>МАСТЕРА-ПРОФЕССИОНАЛЫ</nobr> СВОЕГО ДЕЛА И
           &nbsp;НЕ&nbsp;МОГУТ СТОИТЬ ДЕШЕВО.К ТОМУ&nbsp;ЖЕ, РАЗВЕ ЦЕНА
            НЕ&nbsp;ДАЁТ ОПРЕДЕЛЁННЫЙ СТАТУС?
@@ -74,7 +73,7 @@
       </div>
     </div>
 
-  <div class="main-content">  <!--Непонятный блок с серой линией посередине-->
+  <div class="main-content clearfix">  <!--Непонятный блок с серой линией посередине-->
     <div class="container">
       <div class="left-column">
         <div class="news-column">
@@ -102,15 +101,15 @@
     <div class="right-column">
       <div class="gallery">
         <h2>ФОТОГАЛЛЕРЕЯ</h2>
-        <img src="/img/gallery-photo1" alt="photo from workplace" width="286px" height="164">
-        <button type="button" name="pre" class="button">НАЗАД</button>
-        <button type="button" name="next" class="button">ВПЕРЕД</button>
+        <img src="img/gallery-photo1.jpg" alt="photo from workplace" width="286px" height="164">
+        <a href="#" class="button back">НАЗАД</a>
+        <a  href="#" class="button next">ВПЕРЕД</a>
       </div>
     </div>
     </div>
   </div>
 
-    <div class="feedback">  <!--Обратная связь -->
+    <div class="feedback clearfix">  <!--Обратная связь -->
       <div class="container">
         <div class="contacts-info">
           <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
@@ -133,11 +132,11 @@
             УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И&nbsp;МЫ&nbsp;СВЯЖЕМСЯ
              С&nbsp;ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
           </p>
-          <form class="reservation-form" action="index.html" method="post">
+          <form class="reservation-form" action="index.html" method="post" class="reservation-form">
             <input type="text" name="date" placeholder="ДАТА">
             <input type="text" name="time" placeholder="ВРЕМЯ">
-            <input type="text" name="name" placeholder="ВАШЕ ИМЯ">
-            <input type="tel" name="phone" placeholder="ТЕЛЕФОН">
+            <input type="text" name="name" placeholder="ВАШЕ ИМЯ" class="name">
+            <input type="tel" name="phone" placeholder="ТЕЛЕФОН" class="tel">
             <button type="submit" name="button" class="button">ОТПРАВИТЬ</button>
           </form>
         </div>
@@ -156,14 +155,15 @@
         </p>
       </div>
       <div class="friendship"> <!--Кнопочки соцсетей-->
+        <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
         <a href="#" class="button vk"><img src="img/vk.svg" alt="vk" width="25px" height="16px"></a>
         <a href="#" class="button fd"><img src="img/fb.svg" alt="fb" width="12px" height="22px"></a>
         <a href="#" class="button inst"><img src="img/inst.svg" alt="inst" width="21px" height="21px"></a>
       </div>
       <div class="copyright"> <!--Копирайт-->
-        <p>РАЗРАБОТАНО
+        <span>РАЗРАБОТАНО</span>
           <a href="#" class="button">htmlacademy</a>
-        </p>
+
       </div>
     </div>
   </footer>

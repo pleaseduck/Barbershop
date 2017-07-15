@@ -1,0 +1,128 @@
+ul {
+  padding:0;
+  margin:0;
+  list-style-type: none;
+}
+.container {
+width:900px;
+padding:0 20px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-header {
+min-height:72px;
+margin-bottom:30px;
+}
+.main-menu {
+  float:left;
+}
+.login-menu {
+  float:right;
+}
+.main-menu > li {
+display:inline-block;
+margin-right:45px;
+float: left;
+}
+.main-menu > li:last-child {
+  margin-right:0px;
+}
+.borodinsky-logo {
+   padding-left: 266px;
+   padding-right: 266px;
+
+}
+.borodinsky-logo img {
+margin-left:auto;
+margin-right:auto;
+}
+.advatnages {
+  margin-bottom:25px;
+}
+.advantage {
+  width: 265px;
+  float:left;
+  margin-right:
+}
+.advantage-fast {
+margin-right:60px;
+}
+.advantage-cool {
+  margin-right: 45px;
+}
+.advantage .shape {
+  margin-left:110px;
+}
+.main-content {
+  padding-left:55px;
+  padding-top: 20px;
+  padding-right:55px;
+  padding-bottom:20px;
+}
+.main-content .container .left-column {
+  float:left;
+  width: 320px;
+  margin-right:170px;
+}
+.main-content .container .right-column {
+  display:inline-block;
+  width: 300px;
+}
+.back{
+  display:inline-block;
+  margin-right:20px;
+}
+.next {
+  display: inline-block;
+}
+.feedback {
+  padding-left:55px;
+  padding-top: 20px;
+  padding-right:55px;
+  padding-bottom:20px;
+  margin-top:25px;
+}
+.contacts-info {
+  float:left;
+  width: 320px;
+  margin-right:170px;
+}
+.reservation {
+  display:inline-block;
+  width: 300px;
+}
+.map-button {
+  display:inline-block;
+  margin-right:30px;
+}
+.feedback {
+  margin-bottom:40px;
+}
+.feedback-button {
+    display: inline-block;
+}
+.reservation-form input {
+  width:140px;
+  display:inline-block;
+  margin-bottom:20px;
+}
+input[class="name"],input[class="tel"] {
+  margin-bottom:45px;
+}
+.footer-info {
+  width:310px;
+  float:left;
+  margin-right: 90px;
+}
+.friendship {
+  width:140px;
+  float:left;
+
+}
+.copyright {
+  float:right;
+  width:140px;
+}
