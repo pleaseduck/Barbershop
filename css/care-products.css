@@ -80,7 +80,6 @@ fieldset.producer label:last-child {
   margin-bottom: 0;
 }
 fieldset.items-group {
-  display:inline-block;
   min-height:125px;
   width:232px;
   margin-right:10px;

@@ -3,9 +3,11 @@
   <head lang=ru>
     <meta charset="utf-8">
     <title>Barbershop</title>
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
 
     <header class="main-header clearfix"> <!--Шапка-->
       <div class="container">
@@ -29,13 +31,12 @@
         </ul>
 
       <div class="login-menu">  <!--Кнопка входа и поле, которое появится после входа-->
-        <img src="img/login-icon.svg" alt="login icon" width="18px" height="16">
       <a href="#" class="btn-enter">Вход</a>
       </div>
     </div>
     </header>
 
-<main>
+<main class="container">
 
     <!--Логотип-->
   <div class="container">
@@ -43,11 +44,10 @@
       <img src="img/borodinsky-logo.png" alt="Barbershop logo" width="368px" height="204px">
     </div>
   </div>
-  <div class="advatnages">  <!--Преимущества-->
+  <div class="advatnages clearfix">  <!--Преимущества-->
     <div class="container">
      <div class="advantage advantage-fast">
-      <b>БЫСТРО</b><br>
-      <img src="img/Shape.svg" alt="shape" class="shape">
+      <span class="caption">БЫСТРО</span><br>
         <p>
            МЫ&nbsp;ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО!ДВА ЧАСА
            ПРОЛЕТЯТ НЕЗАМЕТНО И&nbsp;ВЫ&nbsp;&mdash; СЧАСТЛИВЫЙ
@@ -55,16 +55,14 @@
           </p>
       </div>
       <div class="advantage advantage-cool">
-      <b>КРУТО</b><br>
-        <img src="img/Shape.svg" alt="shape" class="shape">
+      <span class="caption">КРУТО</span><br>
         <p>ЗАБУДЬТЕ, КАК ВЫ&nbsp;СТРИГЛИСЬ РАНЬШЕ.
           МЫ СДЕЛАЕМ ИЗ&nbsp;ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
           ВО&nbsp;ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
         </p>
       </div>
       <div class="advantage advantage-expensive">
-      <b>ДОРОГО</b><br>
-        <img src="img/Shape.svg" alt="shape" class="shape">
+      <span class="caption">ДОРОГО</span><br>
         <p>НАШИ <nobr>МАСТЕРА-ПРОФЕССИОНАЛЫ</nobr> СВОЕГО ДЕЛА И
           &nbsp;НЕ&nbsp;МОГУТ СТОИТЬ ДЕШЕВО.К ТОМУ&nbsp;ЖЕ, РАЗВЕ ЦЕНА
            НЕ&nbsp;ДАЁТ ОПРЕДЕЛЁННЫЙ СТАТУС?
@@ -77,7 +75,7 @@
     <div class="container">
       <div class="left-column">
         <div class="news-column">
-          <h2>НОВОСТИ</h2>
+          <span class="caption">НОВОСТИ</span>
           <ul>
             <li>
               <p>
@@ -100,7 +98,7 @@
 
     <div class="right-column">
       <div class="gallery">
-        <h2>ФОТОГАЛЛЕРЕЯ</h2>
+        <span class="caption">ФОТОГАЛЛЕРЕЯ</span>
         <img src="img/gallery-photo1.jpg" alt="photo from workplace" width="286px" height="164">
         <a href="#" class="button back">НАЗАД</a>
         <a  href="#" class="button next">ВПЕРЕД</a>
@@ -112,7 +110,7 @@
     <div class="feedback clearfix">  <!--Обратная связь -->
       <div class="container">
         <div class="contacts-info">
-          <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+          <span class="caption">КОНТАКТНАЯ ИНФОРМАЦИЯ</span>
           <p>
             БАРБЕРШОП &laquo;БОРОДИНСКИЙ&raquo;<br />
             АДРЕС Г.&nbsp;<nobr>САНКТ-ПЕТЕРБУРГ</nobr>, Б.КОНЮШЕННАЯ, Д.19/8<br />
@@ -127,7 +125,7 @@
             <a href="#" class="button feedback-button">ОБРАТНАЯ СВЯЗЬ</a>
         </div>
         <div class="reservation"> <!--Форма для записи-->
-          <h2>ЗАПИСАТЬСЯ</h2>
+          <span class="caption">ЗАПИСАТЬСЯ</span>
           <p>
             УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И&nbsp;МЫ&nbsp;СВЯЖЕМСЯ
              С&nbsp;ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
@@ -143,25 +141,24 @@
       </div>
     </div>
 </main>
-
-  <footer class="main-footer"> <!--Футер-->
+  <footer class="main-footer clearfix"> <!--Футер-->
     <div class="container">
       <div class="footer-info"> <!--Инфа в футере-->
         <p>
           БАРБЕРШОП &laquo;БОРОДИНСКИЙ&raquo;<br />
           АДРЕС Г.&nbsp;<nobr>САНКТ-ПЕТЕРБУРГ</nobr>, Б.КОНЮШЕННАЯ, Д.19/8<br />
-          КАК НАС НАЙТИ?
+          <a href="#">КАК НАС НАЙТИ?</a><br>
           ТЕЛЕФОН: <nobr>+7(495)666-02-66</nobr>
         </p>
       </div>
       <div class="friendship"> <!--Кнопочки соцсетей-->
-        <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
-        <a href="#" class="button vk"><img src="img/vk.svg" alt="vk" width="25px" height="16px"></a>
-        <a href="#" class="button fd"><img src="img/fb.svg" alt="fb" width="12px" height="22px"></a>
-        <a href="#" class="button inst"><img src="img/inst.svg" alt="inst" width="21px" height="21px"></a>
+        <span>ДАВАЙТЕ ДРУЖИТЬ!</span><br>
+        <a href="#" class="button vk">vk</a>
+        <a href="#" class="button fd">fb</a>
+        <a href="#" class="button inst">inst</a>
       </div>
       <div class="copyright"> <!--Копирайт-->
-        <span>РАЗРАБОТАНО</span>
+        <span>РАЗРАБОТАНО:</span><br>
           <a href="#" class="button">htmlacademy</a>
 
       </div>

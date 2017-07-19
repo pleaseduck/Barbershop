@@ -1,66 +1,186 @@
-ul {
-  padding:0;
-  margin:0;
-  list-style-type: none;
+body {
+margin:auto;
+background-image: url(../img/background-body.jpg);
+color: #ffffff;
+font-family:'PT Sans Narrow', sans-serif;
+font-size:14px;
+line-height:24px;
+}
+
+a {
+  text-decoration: none;
 }
 .container {
-width:900px;
-padding:0 20px;
+width:940px;
 }
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+.button {
+  box-sizing: border-box;
+  display:inline-block;
+  width:140px;
+  min-height:42px;
+  background-color:black;
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:14px;
+  line-height:24px;
+  color:white;
+  padding:10px 25px;
+}
+.button:hover {
+  background-color: #663d15;
+}
 .main-header {
+width:100%;
 min-height:72px;
-margin-bottom:30px;
+margin-bottom:55px;
+background-color:black;
 }
 .main-menu {
+  display: inline-block;
   float:left;
+  padding:0;
+  margin:0;
+  list-style-type: none;
 }
-.login-menu {
-  float:right;
-}
+
 .main-menu > li {
 display:inline-block;
-margin-right:45px;
 float: left;
+vertical-align: top;
+padding:0;
+margin:0;
 }
 .main-menu > li:last-child {
   margin-right:0px;
 }
-.borodinsky-logo {
-   padding-left: 266px;
-   padding-right: 266px;
-
+.login-menu {
+display: inline-block;
+vertical-align: top;
+float: right;
+padding:0;
+margin:0;
+margin-right: 0;
+width:100px;
+height:70px;
 }
-.borodinsky-logo img {
-margin-left:auto;
-margin-right:auto;
+.main-menu a, .login-menu a {
+  display:inline-block;
+  width:100px;
+color: #ffffff;
+font-family:'PT Sans Narrow', sans-serif;
+font-size:16px;
+line-height:20px;
+text-transform: uppercase;
+padding-top:25px;
+padding-bottom:25px;
+text-decoration: none;
+text-align: center;
+}
+.main-menu a:hover, .login-menu a:hover {
+  background-color: #242424;
+}
+.main-menu a:first-child {
+margin-left:25px;
+}
+.borodinsky-logo {
+  padding-left: 286px;
+  padding-right: 286px;
+   margin-bottom:20px;
+}
+
+.advantage span.caption {
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:30px;
+  line-height:40px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+  margin-left:120px;
+  padding-bottom:35px;
+  position: relative;
+}
+.advantage span.caption::after {
+  content: " ";
+  display: inline-block;
+  width:20px;
+  height:20px;
+  background-color:white;
+  position: absolute;
+  top:50px;
+  left:30px;
+  transform: rotate(45deg);
 }
 .advatnages {
-  margin-bottom:25px;
+  margin-bottom:60px;
 }
 .advantage {
-  width: 265px;
+  width: 300px;
   float:left;
-  margin-right:
+  margin-right:20px;
 }
-.advantage-fast {
-margin-right:60px;
+.advantage:last-of-type {
+margin-right:0;
 }
-.advantage-cool {
-  margin-right: 45px;
+.advantage p {
+margin-top:30px;
+padding:25px;
+padding-top:0;
 }
-.advantage .shape {
-  margin-left:110px;
-}
+
 .main-content {
   padding-left:55px;
   padding-top: 20px;
   padding-right:55px;
   padding-bottom:20px;
+  margin-bottom:35px;
+  background-image: url(../img/white-background.jpg);
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:14px;
+  line-height:24px;
+  text-transform: uppercase;
+  color:black;
+  min-height:400px;
+  position: relative;
+}
+.main-content::after {
+  content: " ";
+  position:absolute;
+  width:8px;
+  height:278px;
+  top:17%;
+  left:50%;
+  background-image:url(../img/grey-line.png);
+}
+.main-content ul {
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+.main-content time {
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:14px;
+  line-height:24px;
+  text-transform: lowercase;
+  color: #535251;
+}
+.main-content p {
+  margin-bottom:5px;
+}
+.news-column li {
+  margin-bottom:30px;
+}
+.main-content .caption, .feedback .caption {
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:30px;
+  line-height:40px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+    margin-bottom:30px;
 }
 .main-content .container .left-column {
   float:left;
@@ -71,9 +191,22 @@ margin-right:60px;
   display:inline-block;
   width: 300px;
 }
+.gallery {
+  width:300px;
+}
+.gallery img {
+  padding:0;
+  margin:0;
+  margin-bottom:45px;
+  border:7px solid white;
+}
+.gallery .caption {
+  margin-bottom:45px;
+}
+
 .back{
   display:inline-block;
-  margin-right:20px;
+  margin-right:15px;
 }
 .next {
   display: inline-block;
@@ -84,45 +217,122 @@ margin-right:60px;
   padding-right:55px;
   padding-bottom:20px;
   margin-top:25px;
+  margin-bottom:40px;
+  background-image: url(../img/white-background.jpg);
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:14px;
+  line-height:24px;
+  text-transform: uppercase;
+  color:black;
+  min-height:400px;
+  position: relative;
+}
+.feedback::after {
+  content: " ";
+  position:absolute;
+  width:8px;
+  height:278px;
+  top:17%;
+  left:50%;
+  background-image:url(../img/grey-line.png);
+}
+.feedback p {
+  margin-bottom:30px;
 }
 .contacts-info {
   float:left;
   width: 320px;
   margin-right:170px;
 }
+.contacts-info p:nth-of-type(2) {
+  margin-bottom:60px;
+}
 .reservation {
   display:inline-block;
-  width: 300px;
+  width:310px;
 }
+
 .map-button {
   display:inline-block;
   margin-right:30px;
 }
-.feedback {
-  margin-bottom:40px;
-}
+
 .feedback-button {
     display: inline-block;
 }
 .reservation-form input {
   width:140px;
+  height: 40px;
   display:inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
   margin-bottom:20px;
+  padding-left:15px;
+  border:2px solid black;
+}
+.reservation-form input:focus {
+  border:2px solid #663d15;
 }
 input[class="name"],input[class="tel"] {
   margin-bottom:45px;
+}
+.reservation-form input:nth-of-type(odd) {
+  margin-right:15px;
+}
+.reservation-form button{
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:14px;
+  line-height:24px;
+  text-transform: uppercase;
+  color:white;
+  width:100%;
+}
+footer {
+  padding-top:40px;
+  margin-top:65px;
+  background-color:#232323;
+  min-height:150px;
 }
 .footer-info {
   width:310px;
   float:left;
   margin-right: 90px;
 }
+.footer-info a {
+  text-decoration: underline;
+  color:white;
+}
 .friendship {
-  width:140px;
+  width:200px;
   float:left;
+}
+.friendship span, .copyright span {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom:15px;
+  padding:0 15px;
+}
+.friendship a {
+  display: inline-block;
+  vertical-align: top;
+  width:40px;
+  height:40px;
+  text-align: center;
+  margin-right:5px;
 
+}
+
+.friendship a:last-of-type {
+  margin-right:0;
 }
 .copyright {
   float:right;
   width:140px;
+}
+.copyright a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  color:white;
+  text-transform: uppercase;
 }
