@@ -3,6 +3,7 @@
   <head lang="ru">
     <meta charset="utf-8">
     <title>Прайс-лист</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/price-list.css">
   </head>
   <body>
@@ -12,7 +13,7 @@
       </div>
         <ul class="main-menu">  <!--Главное меню-->
           <li>
-            <a href="#"><img src="img/common-logo.svg" alt="barbershop" width="111px" height="24px"></a>
+            <a href="index.html"><img src="img/common-logo.svg" alt="barbershop" width="111px" height="24px"></a>
           </li>
           <li>
             <a href="#">ИНФОРМАЦИЯ</a>
@@ -32,20 +33,19 @@
         </ul>
 
       <div class="login-menu">  <!--Кнопка входа и поле, которое появится после входа-->
-      <a href="#" class="btn-enter">ВХОД</a>
+      <a href="#" class="btn-enter"><div class="login-icon"></div>ВХОД</a>
       </div>
     </div>
     </header>
-    <main>
+    <main class="container">
       <div class="container">
-        <h2>
+        <span class="caption">
           ПРАЙС-ЛИСТ
-        </h2>
+        </span>
         <div class="way-to-page">
           <span class="breadcrumbs">
-            <a href="#">ГЛАВНАЯ</a>
+            <a href="index.html">ГЛАВНАЯ</a>
           </span>
-          <img src="img/black-shape.svg" alt="blck shape">
           <span class="breadcrumbs">
             <a href="#" class=selected>ПРАЙС-ЛИСТ</a>
           </span>
@@ -53,9 +53,9 @@
         <h1 class="title"><span>ИСТИННО МУЖСКАЯ КЛАССИКА</span></h1>
       <div class="clearfix">
         <section class="info-about-us">  <!--Левая половина-->
-          <h2>
+          <span class="title">
             МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:
-          </h2>
+          </span>
           <ul>
             <li>
               <a href="#">BAXTER OF CALIFORNIA</a>
@@ -70,9 +70,9 @@
               <a href="#">MALIN+GOETZ</a>
             </li>
           </ul>
-          <h2>
+          <span class="title">
             НЕСКОЛЬКО СЛОВ О НАС:
-          </h2>
+          </span>
           <p>
           НАША ПАРИКМАХЕРСКАЯ ЗАНИМАЕТСЯ ИСКЛЮЧИТЕЛЬНО МУЖСКИМИ
            СТРИЖКАМИ. СТРИЖКА КАЖДОГО КЛИЕНТА ДЛЯ НАС&nbsp;&mdash; ЭТО УНИКАЛЬНАЯ
@@ -81,9 +81,9 @@
           </p>
         </section>
         <div class="idk-block">  <!--Правая половина-->
-          <h2>
+          <span class="title">
             ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ
-          </h2>
+          </span>
           <table class="price-list">
             <tr>
               <td>СТРИЖКА</td>
@@ -108,25 +108,26 @@
       </div>
       </div>
     </main>
-    <footer class="main-footer"> <!--Футер-->
+    <footer class="main-footer clearfix"> <!--Футер-->
       <div class="container">
         <div class="footer-info"> <!--Инфа в футере-->
           <p>
             БАРБЕРШОП &laquo;БОРОДИНСКИЙ&raquo;<br />
             АДРЕС Г.&nbsp;<nobr>САНКТ-ПЕТЕРБУРГ</nobr>, Б.КОНЮШЕННАЯ, Д.19/8<br />
-            КАК НАС НАЙТИ?
+            <a href="#">КАК НАС НАЙТИ?</a><br>
             ТЕЛЕФОН: <nobr>+7(495)666-02-66</nobr>
           </p>
         </div>
         <div class="friendship"> <!--Кнопочки соцсетей-->
-          <a href="#" class="button vk">ВКОНТАКТЕ</a>
-          <a href="#" class="button fd">ФЕЙСБУК</a>
-          <a href="#" class="button inst">ИНСТАГРАМ</a>
+          <span>ДАВАЙТЕ ДРУЖИТЬ!</span><br>
+          <a href="#" class="button vk">vk</a>
+          <a href="#" class="button fb">fb</a>
+          <a href="#" class="button inst">inst</a>
         </div>
         <div class="copyright"> <!--Копирайт-->
-          <p>РАЗРАБОТАНО
-            <a href="#" class="button">htmlacademy</a>
-          </p>
+          <span>РАЗРАБОТАНО:</span><br>
+            <a href="#" class="button">htmlacademy.ru</a>
+
         </div>
       </div>
     </footer>

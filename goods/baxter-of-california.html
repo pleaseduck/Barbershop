@@ -3,6 +3,7 @@
   <head lang="ru">
     <meta charset="utf-8">
     <title>Набор для путешествий «BAXTER OF CALIFORNIA»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="../css/item-list.css">
   </head>
   <body>
@@ -10,7 +11,7 @@
       <div class="container">
         <ul class="main-menu">  <!--Главное меню-->
           <li>
-            <a href="#">  <img src="../img/common-logo.svg" alt="barbershop" width="111px" height="24px"></a>
+            <a href="../index.html"> <img src="../img/common-logo.svg" alt="barbershop" width="111px" height="24px"></a>
           </li>
           <li>
             <a href="#">ИНФОРМАЦИЯ</a>
@@ -19,7 +20,7 @@
             <a href="#">НОВОСТИ</a>
           </li>
           <li>
-            <a href="#">ПРАЙС-ЛИСТ</a>
+            <a href="../price-list.html">ПРАЙС-ЛИСТ</a>
           </li>
           <li>
             <a href="#">МАГАЗИН</a>
@@ -30,29 +31,26 @@
         </ul>
 
         <div class="login-menu">  <!--Кнопка входа и поле, которое появится после входа-->
-        <a href="#" class="btn-enter">ВХОД</a>
+        <a href="#" class="btn-enter"><div class="login-icon"></div>Вход</a>
         </div>
       </div>
     </header>
 
-<main>
-<div class="continer">
-  <h2 class="item-name">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</h2>
-  <div class="way-to-page">
-    <span class="breadcrumbs">
-      <a href="#">ГЛАВНАЯ</a>
+<main class="container clearfix">
+<div class="container">
+  <span class="caption">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</span>
+  <div class="way-to-page ">
+    <span class="breadcrumbs" >
+      <a href="../index.html" class="no-rhomba">ГЛАВНАЯ</a>
     </span>
-    <img src="../img/black-shape.svg" alt="blck shape">
     <span class="breadcrumbs">
       <a href="#">МАГАЗИН</a>
     </span>
-    <img src="../img/black-shape.svg" alt="blck shape">
     <span class="breadcrumbs">
-      <a href="#">СРЕДСТВА ДЛЯ УХОДА</a>
+      <a href="../care-products.html">СРЕДСТВА ДЛЯ УХОДА</a>
     </span>
-    <img src="../img/black-shape.svg" alt="blck shape">
     <span class="breadcrumbs">
-      <a href="#" clas="selected">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a>
+      <a href="#" class="selected">НАБОР ДЛЯ ПУТЕШЕСТВИЙ «BAXTER OF CALIFORNIA»</a>
     </span>
   </div>
   <section class="product-photo">
@@ -87,7 +85,7 @@
   </div>
   </section>
   <section class="composition-set">
-    <span clas="title">В НАБОР ВХОДЯТ:</span>
+    <span class="title">В НАБОР ВХОДЯТ:</span>
     <ul class="composition-set">
       <li>СРЕДСТВО ДЛЯ УМЫВАНИЯ(50 МЛ)</li>
       <li>УВЛАЖНЯЮЩИЙ КРЕМ(50 МЛ)</li>
@@ -98,29 +96,28 @@
   </section>
   </div>
 </main>
+<footer class="main-footer clearfix"> <!--Футер-->
+  <div class="container">
+    <div class="footer-info"> <!--Инфа в футере-->
+      <p>
+        БАРБЕРШОП &laquo;БОРОДИНСКИЙ&raquo;<br />
+        АДРЕС Г.&nbsp;<nobr>САНКТ-ПЕТЕРБУРГ</nobr>, Б.КОНЮШЕННАЯ, Д.19/8<br />
+        <a href="#">КАК НАС НАЙТИ?</a><br>
+        ТЕЛЕФОН: <nobr>+7(495)666-02-66</nobr>
+      </p>
+    </div>
+    <div class="friendship"> <!--Кнопочки соцсетей-->
+      <span>ДАВАЙТЕ ДРУЖИТЬ!</span><br>
+      <a href="#" class="button vk">vk</a>
+      <a href="#" class="button fb">fb</a>
+      <a href="#" class="button inst">inst</a>
+    </div>
+    <div class="copyright"> <!--Копирайт-->
+      <span>РАЗРАБОТАНО:</span><br>
+        <a href="#" class="button">htmlacademy.ru</a>
 
-    <footer class="main-footer"> <!--Футер-->
-      <div class="container">
-        <div class="footer-info"> <!--Инфа в футере-->
-          <p>
-            БАРБЕРШОП &laquo;БОРОДИНСКИЙ&raquo;<br />
-            АДРЕС Г.&nbsp;<nobr>САНКТ-ПЕТЕРБУРГ</nobr>, Б.КОНЮШЕННАЯ, Д.19/8<br />
-            КАК НАС НАЙТИ?
-            ТЕЛЕФОН: <nobr>+7(495)666-02-66</nobr>
-          </p>
-        </div>
-        <div class="friendship"> <!--Кнопочки соцсетей-->
-          <span>ДАВАЙТЕ ДРУЖИТЬ!</span>
-          <a href="#" class="button vk"><img src="../img/vk.svg" alt="vk" width="25px" height="16px"></a>
-          <a href="#" class="button fd"><img src="../img/fb.svg" alt="fb" width="12px" height="22px"></a>
-          <a href="#" class="button inst"><img src="../img/inst.svg" alt="inst" width="21px" height="21px"></a>
-        </div>
-        <div class="copyright"> <!--Копирайт-->
-          <p>РАЗРАБОТАНО
-            <a href="#" class="button">htmlacademy</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </div>
+</footer>
   </body>
 </html>

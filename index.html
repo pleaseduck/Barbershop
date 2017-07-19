@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
-  <body class="container">
+  <body>
 
     <header class="main-header clearfix"> <!--Шапка-->
-      <div class="container">
+      <div  class="container">
         <ul class="main-menu">  <!--Главное меню-->
 
           <li>
@@ -20,7 +20,7 @@
             <a href="#">Новости</a>
           </li>
           <li>
-            <a href="#">Прайс-лист</a>
+            <a href="price-list.html">Прайс-лист</a>
           </li>
           <li>
             <a href="#">Магазин</a>
@@ -31,7 +31,7 @@
         </ul>
 
       <div class="login-menu">  <!--Кнопка входа и поле, которое появится после входа-->
-      <a href="#" class="btn-enter">Вход</a>
+      <a href="#" class="btn-enter"><div class="login-icon"></div>Вход</a>
       </div>
     </div>
     </header>
@@ -64,7 +64,7 @@
       <div class="advantage advantage-expensive">
       <span class="caption">ДОРОГО</span><br>
         <p>НАШИ <nobr>МАСТЕРА-ПРОФЕССИОНАЛЫ</nobr> СВОЕГО ДЕЛА И
-          &nbsp;НЕ&nbsp;МОГУТ СТОИТЬ ДЕШЕВО.К ТОМУ&nbsp;ЖЕ, РАЗВЕ ЦЕНА
+          &nbsp;НЕ&nbsp;МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ&nbsp;ЖЕ, РАЗВЕ ЦЕНА
            НЕ&nbsp;ДАЁТ ОПРЕДЕЛЁННЫЙ СТАТУС?
          </p>
       </div>
@@ -131,10 +131,10 @@
              С&nbsp;ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
           </p>
           <form class="reservation-form" action="index.html" method="post" class="reservation-form">
-            <input type="text" name="date" placeholder="ДАТА">
-            <input type="text" name="time" placeholder="ВРЕМЯ">
-            <input type="text" name="name" placeholder="ВАШЕ ИМЯ" class="name">
-            <input type="tel" name="phone" placeholder="ТЕЛЕФОН" class="tel">
+            <input type="text" name="date" placeholder="ДАТА" class="date form-text" tabindex>
+            <input type="text" name="time" placeholder="ВРЕМЯ" class=" time form-text" tabindex>
+            <input type="text" name="name" placeholder="ВАШЕ ИМЯ" class="name form-text" tabindex>
+            <input type="tel" name="phone" placeholder="ТЕЛЕФОН" class="tel form-text" tabindex>
             <button type="submit" name="button" class="button">ОТПРАВИТЬ</button>
           </form>
         </div>
@@ -154,12 +154,12 @@
       <div class="friendship"> <!--Кнопочки соцсетей-->
         <span>ДАВАЙТЕ ДРУЖИТЬ!</span><br>
         <a href="#" class="button vk">vk</a>
-        <a href="#" class="button fd">fb</a>
+        <a href="#" class="button fb">fb</a>
         <a href="#" class="button inst">inst</a>
       </div>
       <div class="copyright"> <!--Копирайт-->
         <span>РАЗРАБОТАНО:</span><br>
-          <a href="#" class="button">htmlacademy</a>
+          <a href="#" class="button">htmlacademy.ru</a>
 
       </div>
     </div>

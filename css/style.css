@@ -1,12 +1,16 @@
 body {
 margin:auto;
 background-image: url(../img/background-body.jpg);
+background-repeat: no-repeat;
 color: #ffffff;
 font-family:'PT Sans Narrow', sans-serif;
 font-size:14px;
 line-height:24px;
+font-weight:700;
 }
-
+main, header .container,footer .container {
+  margin:0 auto;
+}
 a {
   text-decoration: none;
 }
@@ -28,7 +32,8 @@ width:940px;
   font-size:14px;
   line-height:24px;
   color:white;
-  padding:10px 25px;
+    padding:10px 25px;
+  text-align: center;
 }
 .button:hover {
   background-color: #663d15;
@@ -66,7 +71,19 @@ margin:0;
 margin-right: 0;
 width:100px;
 height:70px;
+position: relative;
 }
+div.login-icon{
+  display:inline-block;
+  width:18px;
+  height:16px;
+  position:absolute;
+  background-image: url(../img/icon-login.svg);
+  background-repeat:no-repeat;
+  top:40%;
+  left:-1%;
+}
+
 .main-menu a, .login-menu a {
   display:inline-block;
   width:100px;
@@ -82,6 +99,9 @@ text-align: center;
 }
 .main-menu a:hover, .login-menu a:hover {
   background-color: #242424;
+}
+.login-menu a:hover .login-icon {
+  opacity:0.3;
 }
 .main-menu a:first-child {
 margin-left:25px;
@@ -129,6 +149,7 @@ margin-right:0;
 margin-top:30px;
 padding:25px;
 padding-top:0;
+max-height:80px;
 }
 
 .main-content {
@@ -271,7 +292,8 @@ padding-top:0;
   border:2px solid black;
 }
 .reservation-form input:focus {
-  border:2px solid #663d15;
+  outline:none;
+  border-color: #663d15;
 }
 input[class="name"],input[class="tel"] {
   margin-bottom:45px;
@@ -286,6 +308,7 @@ input[class="name"],input[class="tel"] {
   text-transform: uppercase;
   color:white;
   width:100%;
+  border:0px solid black;
 }
 footer {
   padding-top:40px;
@@ -319,9 +342,19 @@ footer {
   height:40px;
   text-align: center;
   margin-right:5px;
-
+  font-size:0px;
+  background-image: url(../sprite/index.svg);
+  background-repeat:no-repeat;
 }
-
+.friendship a.vk {
+  background-position:24% 50%;
+}
+.friendship a.fb {
+  background-position:52% 50%;
+}
+.friendship a.inst {
+  background-position:79% 40%;
+}
 .friendship a:last-of-type {
   margin-right:0;
 }
