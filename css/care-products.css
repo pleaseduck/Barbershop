@@ -58,6 +58,13 @@ width:940px;
 .button:hover {
   background-color: #663d15;
 }
+.show-button {
+  font-family:'PT Sans Narrow', sans-serif;
+  font-size:13px;
+  line-height:18px;
+  font-weight:700;
+  text-transform: uppercase;
+}
 .second-header {
 width:100%;
 min-height:72px;
@@ -106,25 +113,30 @@ div.login-icon{
 }
 
 .main-menu a, .login-menu a {
-  display:inline-block;
-  width:100px;
+  display:block;
+  box-sizing: border-box;
   min-height:24px;
 color: #ffffff;
 font-family:'PT Sans Narrow', sans-serif;
 font-size:16px;
 line-height:20px;
 text-transform: uppercase;
-padding-top:25px;
-padding-bottom:25px;
+padding:25px 20px;
 text-decoration: none;
 text-align: center;
 }
-.main-menu a:first-of-type {
-  width:110px;
+
+.main-menu .active {
+  position:relative;
 }
-.main-menu a img {
-  padding:0;
-  margin:0;
+.main-menu .active::after {
+content: " ";
+position: absolute;
+right:20px;
+left:20px;
+height:5px;
+bottom:-8px;
+background-color: #fff;
 }
 .main-menu a:hover, .login-menu a:hover {
   background-color: #242424;
@@ -132,24 +144,9 @@ text-align: center;
 .login-menu a:hover .login-icon {
   opacity:0.3;
 }
-.main-menu a:first-child {
+.main-menu li:first-child a{
 margin-left:25px;
 }
-.main-menu li:nth-of-type(5) {
-  position:relative;
-}
-.main-menu li:nth-of-type(5):after {
-  content: " ";
-  display: inline-block;
-  vertical-align: top;
-  width:75px;
-  height:4px;
-  background-color:white;
-  position: absolute;
-  bottom:-4px;
-  left:43px;
-}
-
 .breadcrumbs {
   font-size:14px;
 }
@@ -159,9 +156,26 @@ margin-left:25px;
   text-decoration:none;
   color:black;
 }
-.breadcrumbs a.selected {
+.breadcrumbs a,.breadcrumbs span {
+  display: inline-block;
+  position: relative;
+  text-decoration:none;
+  color:black;
+}
+.breadcrumbs span.selected {
   color: #aba9a7;
   padding-left:25px;
+}
+.breadcrumbs span.selected::before {
+  content: " ";
+  display: inline-block;
+  width:8px;
+  height:8px;
+  background-color:black;
+  transform: rotate(45deg);
+  position: absolute;
+  left:8px;;
+  top:8px;
 }
 .breadcrumbs a {
 padding-left:25px;
@@ -209,13 +223,73 @@ fieldset.producer {
   min-height: 260px;
   width:220px;
   margin-right:10px;
+  position:relative;
 }
 fieldset.producer label {
   display:block;
   margin-bottom:10px;
+  padding-left:45px;
+  position: relative;
+}
+.fake-check {
+  display:inline-block;
+  box-sizing: border-box;
+  width:20px;
+  height:20px;
+  position:absolute;
+  border:2px solid black;
+  margin-left:3px;
+  left:0;
+}
+
+label:hover > .fake-check {
+  border:2px solid #663d15;
+}
+fieldset.producer input:checked + label::before {
+  content: " ";
+  width:13px;
+  height:2px;
+  background-color:black;
+  transform:rotate(45deg);
+  position:absolute;
+  left:6.5px;
+  top:9px;
+}
+fieldset.producer input:checked + label:hover::before {
+  content: " ";
+  width:13px;
+  height:2px;
+  background-color:#663d15;
+  transform:rotate(45deg);
+  position:absolute;
+  left:6.5px;
+  top:9px;
+}
+fieldset.producer input:checked + label::after {
+  content: " ";
+  width:13px;
+  height:2px;
+  background-color:black;
+  transform:rotate(-45deg);
+  position:absolute;
+  left:6.5px;
+  top:9px;
+}
+fieldset.producer input:checked + label:hover::after {
+  content: " ";
+  width:13px;
+  height:2px;
+  background-color:#663d15;
+  transform:rotate(-45deg);
+  position:absolute;
+  left:6.5px;
+  top:9px;
 }
 fieldset.producer label:last-child {
   margin-bottom: 0;
+}
+fieldset.producer input {
+  display:none;
 }
 fieldset.items-group {
   min-height:125px;
@@ -226,12 +300,39 @@ fieldset.items-group {
 fieldset.items-group label {
   display:block;
   margin-bottom:20px;
+  padding-left:35px;
+  position: relative;
 }
-
-fieldset.producer label {
-  position:relative;
+fieldset.items-group input {
+  display: none;
 }
-
+fieldset.items-group label:before {
+  content: " ";
+  position:absolute;
+  box-sizing:border-box;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  border:2px solid black;
+  left:4px;
+}
+fieldset.items-group label:hover:before {
+  border-color:#663d15;
+}
+fieldset.items-group input:checked + label::after {
+  content: " ";
+  position:absolute;
+  box-sizing:border-box;
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background-color:black;
+  left:9.65px;
+  top:5.6px;
+}
+fieldset.items-group input:checked + label:hover::after {
+  background-color:#663d15;
+}
 article.item {
   float:left;
   margin-right:20px;

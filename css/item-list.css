@@ -51,7 +51,7 @@ width:940px;
 }
 .second-header {
 width:100%;
-min-height:80px;
+min-height:72px;
 margin-bottom:55px;
 background-color:black;
 }
@@ -97,22 +97,32 @@ div.login-icon{
 }
 
 .main-menu a, .login-menu a {
-  display:inline-block;
-  width:100px;
+  display:block;
+  box-sizing: border-box;
   min-height:24px;
 color: #ffffff;
 font-family:'PT Sans Narrow', sans-serif;
 font-size:16px;
 line-height:20px;
 text-transform: uppercase;
-padding-top:25px;
-padding-bottom:25px;
+padding:25px 20px;
 text-decoration: none;
 text-align: center;
 }
-.main-menu a:first-of-type {
-  width:110px;
+
+.main-menu .active {
+  position:relative;
 }
+.main-menu .active::after {
+content: " ";
+position: absolute;
+right:20px;
+left:20px;
+height:5px;
+bottom:-2px;
+background-color: #fff;
+}
+
 .main-menu a img {
   padding:0;
   margin:0;
@@ -120,44 +130,46 @@ text-align: center;
 .main-menu a:hover, .login-menu a:hover {
   background-color: #242424;
 }
+.main-menu li:first-child a:hover {
+  background-color: transparent;
+}
 .login-menu a:hover .login-icon {
   opacity:0.3;
 }
-.main-menu a:first-child {
+.main-menu li:first-child a {
 margin-left:25px;
 }
-.main-menu li:nth-of-type(4) {
-  position:relative;
-}
-.main-menu li:nth-of-type(4):after {
-  content: " ";
-  display: inline-block;
-  vertical-align: top;
-  width:75px;
-  height:4px;
-  background-color:white;
-  position: absolute;
-  bottom:-4px;
-  left:43px;
-}
+
 .breadcrumbs {
   font-size:14px;
   margin-bottom:60px;
 }
-.breadcrumbs a {
+.breadcrumbs a,.breadcrumbs span {
   display: inline-block;
   position: relative;
   text-decoration:none;
   color:black;
 }
-.breadcrumbs a.selected {
-  color: #aba9a7;
-  padding-left:25px;
-}
+
 .breadcrumbs a {
 padding-left:25px;
 }
 .breadcrumbs a::before{
+  content: " ";
+  display: inline-block;
+  width:8px;
+  height:8px;
+  background-color:black;
+  transform: rotate(45deg);
+  position: absolute;
+  left:8px;;
+  top:8px;
+}
+.breadcrumbs span.selected {
+  color: #aba9a7;
+  padding-left:25px;
+}
+.breadcrumbs span.selected::before {
   content: " ";
   display: inline-block;
   width:8px;
@@ -277,6 +289,7 @@ footer {
   margin-top:65px;
   background-color:#232323;
   min-height:150px;
+  box-shadow:0 150px 25px -140px black inset;
 }
 .footer-info {
   width:310px;

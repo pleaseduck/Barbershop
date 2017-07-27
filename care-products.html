@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Средства для ухода</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normilize.css">
     <link rel="stylesheet" href="css/care-products.css">
   </head>
   <body>
@@ -22,7 +23,7 @@
           <li>
             <a href="price-list.html">ПРАЙС-ЛИСТ</a>
           </li>
-          <li>
+          <li class="active">
             <a href="#">МАГАЗИН</a>
           </li>
           <li>
@@ -49,7 +50,7 @@
             <a href="#">МАГАЗИН</a>
           </span>
           <span class="breadcrumbs">
-            <a href="#" class="selected">СРЕДСТВА ДЛЯ УХОДА</a>
+            <span class="selected">СРЕДСТВА ДЛЯ УХОДА</span>
           </span>
         </div>
         <div class="filters">
@@ -58,46 +59,43 @@
               <legend>
                 ПРОИЗВОДИТЕЛИ:
               </legend>
-               <label for="checkbox">
-                <input type="checkbox" class="checkbox" id="checkbox" checked>
-                  BAXTER OF CALIFORNIA
+                <input type="checkbox" class="checkbox" id="checkbox1" checked>
+                <label for="checkbox1">BAXTER OF CALIFORNIA
+                    <div class="fake-check"></div>
               </label>
-              <label for="checkbox">
-                <input type="checkbox" class="checkbox" id="checkbox">
-                MR NATTY
+                <input type="checkbox" class="checkbox" id="checkbox2">
+                  <label for="checkbox2">MR NATTY
+                    <div class="fake-check"></div>
               </label>
-              <label for="checkbox">
-                <input type="checkbox" class="checkbox" id="checkbox" checked>
-              SUAVECITO
+                <input type="checkbox" class="checkbox" id="checkbox3" checked>
+              <label for="checkbox3">  SUAVECITO
+                  <div class="fake-check"></div>
               </label>
-              <label for="checkbox">
-                <input type="checkbox" class="checkbox" id="checkbox">
-                  MALIN+GOETZ
+                <input type="checkbox" class="checkbox" id="checkbox4">
+                <label for="checkbox4">  MALIN+GOETZ
+                    <div class="fake-check"></div>
               </label>
-              <label for="checkbox">
-                 <input type="checkbox" class="checkbox" id="checkbox">
-                 MURRAY`S
+                 <input type="checkbox" class="checkbox" id="checkbox5">
+                  <label for="checkbox5"> MURRAY`S
+                      <div class="fake-check"></div>
                </label>
-               <label for="checkbox">
-                 <input type="checkbox" class="checkbox" id="checkbox" checked>
-                  AMERICAN CREW
+                 <input type="checkbox" class="checkbox" id="checkbox6" checked>
+                  <label for="checkbox6">AMERICAN CREW
+                      <div class="fake-check"></div>
                </label>
              </fieldset>
              <fieldset class="items-group">
              <legend>
                ГРУППЫ ТОВАРОВ
              </legend>
-            <label>
-              <input type="radio" class=items-group-choise>
-              БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
+              <input type="radio" class=items-group-choise id="radio1">
+              <label for="radio1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ
             </label>
-            <label>
-              <input type="radio" class=items-group-choise checked>
-              СРЕДСТВА ДЛЯ УХОДА
+              <input type="radio" class=items-group-choise id="radio2" checked>
+              <label for="radio2">СРЕДСТВА ДЛЯ УХОДА
             </label>
-            <label>
-              <input type="radio" class=items-group-choise>
-              АКСЕССУАРЫ
+              <input type="radio" id="radio3" class=items-group-choise>
+              <label for="radio3"> АКСЕССУАРЫ
             </label>
           </fieldset>
             <input type="submit" class="button show-button" value="Показать">
@@ -105,7 +103,7 @@
       </div>
       <div class="item-list clearfix">
         <article class="item">
-          <a href="#">
+          <a href="goods/baxter-of-california.html">
             <img src="img/baxterofcalifornia-set.jpg" alt="  НАБОР ДЛЯ ПУТЕШЕСТВИЙ BAXTER OF CALIFORNIA" width="220px" height="165px">
             <p>НАБОР ДЛЯ ПУТЕШЕСТВИЙ<br>
             «BAXTER OF CALIFORNIA»</p>
