@@ -166,11 +166,12 @@
   </footer>
   <div class="container">
   <div class="login-form">
+    <div class="close-button"></div>
     <span class="caption">ЛИЧНЫЙ КАБИНЕТ</span>
     <span>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</span>
     <form action="" class="login-form">
-      <input type="text" placeholder="ЛОГИН" class="user-icon">
-      <input type="text" placeholder="ПАРОЛЬ" class="pwd-icon"><br>
+      <input type="text" placeholder="ЛОГИН" class="user-icon" required>
+      <input type="text" placeholder="ПАРОЛЬ" class="pwd-icon" required><br>
       <input type="checkbox" name="remember me" id="remember-check">
       <label for="remember-check">
         ЗАПОМНИТЕ МЕНЯ
@@ -180,5 +181,7 @@
     </form>
   </div>
 </div>
+  <div class="overlay"></div>
   </body>
+  <script type="text/javascript" src=js/script.js></script>
 </html>

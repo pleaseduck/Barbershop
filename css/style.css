@@ -385,27 +385,41 @@ div.login-form {
   top:120px;
   left:50%;
   margin-left:-230px;
-
+  display: none;
+  z-index:100;
+  box-shadow: 0 0 20px 0 black;
 }
-div.login-form::after {
+div.login-form-open {
+ display: block;
+}
+div.login-form .close-button::after {
   content: " ";
-  width:20px;
+  width:19px;
   height:4px;
   background-color:#d1d1d1;
   transform:rotate(45deg);
   position:absolute;
-  top:15px;
-  right:-30px;
+  right:2px;
+  top:9px;
 }
-div.login-form::before {
+div.login-form .close-button::before {
   content: " ";
-  width:20px;
+  width:19px;
   height:4px;
   background-color:#d1d1d1;
   transform:rotate(-45deg);
   position:absolute;
-  top:15px;
-  right:-30px;
+  left:1px;
+  top:9px;
+}
+div.login-form .close-button {
+  display:block;
+  position:absolute;
+  width:22px;
+  height:22px;
+  right: -33px;
+  top:9px;
+  background-color:transparent;
 }
 div.login-form a {
   margin-right:2px;
@@ -524,4 +538,16 @@ div.login-form input:checked + label:hover::after {
   position:absolute;
   left:6.5px;
   top:9px;
+}
+.overlay {
+  position:absolute;
+  width:100%;
+    height:195%;
+  background-color: rgba(102, 61, 21, 0.5);
+  z-index:10;
+  top:0;
+  display:none;
+}
+.overlay-open {
+  display:block;
 }
